@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Exercise 3</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <center>
-        <h1>Daftar Planet</h1>
+      <h1>Daftar Planet</h1>
+      <label for="nama">Masukkan Nama : </label>
+      <input id="nama" type="text" onkeyup="filterNama()" />
+      <br />
+      <label for="diameter">Masukkan Diameter : </label>
+      <input id="diameter" type="text" onkeyup="filterDiameter()" />
+      <br />
+      <label for="climate">Masukkan Climate : </label>
+      <input id="climate" type="text" onkeyup="filterClimate()" />
+      <br />
+      <label for="terrain">Masukkan Terrain : </label>
+      <input id="terrain" type="text" onkeyup="filterTerrain()" />
+
+      <div id="planets"></div>
     </center>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
